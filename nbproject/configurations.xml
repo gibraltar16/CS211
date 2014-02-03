@@ -12,7 +12,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>main.c</itemPath>
+      <logicalFolder name="source" displayName="source" projectFiles="true">
+        <itemPath>source/LICENSE</itemPath>
+        <itemPath>source/README.md</itemPath>
+        <itemPath>source/main.c</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -26,6 +30,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>source</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -36,7 +43,11 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="main.c" ex="false" tool="0" flavor2="0">
+      <item path="source/LICENSE" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/README.md" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/main.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -59,7 +70,11 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="main.c" ex="false" tool="0" flavor2="0">
+      <item path="source/LICENSE" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/README.md" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="source/main.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>
