@@ -22,6 +22,7 @@ int main(int argc, char** argv) {
             high = inp;
     }
     printf("Highest Number: %.2F\n", high);
+    
     return (EXIT_SUCCESS);
 }
 
