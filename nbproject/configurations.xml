@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="90">
+<configurationDescriptor version="91">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="CS211" displayName="CS211" projectFiles="true">
       <logicalFolder name="dist" displayName="dist" projectFiles="true">
@@ -29,7 +29,9 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="source" displayName="source" projectFiles="true">
+        <itemPath>main.c</itemPath>
         <itemPath>source/project01.c</itemPath>
+        <itemPath>project02.c</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -68,6 +70,10 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="project02.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="source/project01.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
@@ -101,6 +107,10 @@
             ex="false"
             tool="3"
             flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="project02.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="source/project01.c" ex="false" tool="0" flavor2="0">
       </item>

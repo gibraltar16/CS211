@@ -8,32 +8,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char** argv) {
+int project01() {
     // Create the FLOAT variables for the HIGHEST and INPUT values
-    float high, inp;
-    // Create the int variable for STOP | 0 - False | 1 - True
-    int stop = 0;
+    // Create the variable for STOP | 0 - False | 1 - True
+    float HIGH, INP, STOP;
 
-    // While STOP is [FALSE | 0]
-    while (stop == 0) {
+    // Gives the instructions
+    printf("Entering 0 will terminate the sequence of the input value.\n");
+
+    // While STOP is not 1
+    while (STOP != 1) {
         // Asks and gets the input number
         printf("Enter a number: ");
-        scanf("%f", &inp);
+        scanf("%f", &INP);
+        //scanf("Enter a number: %f", &inp);
 
-        // Specific tasks depending on the input
-        if (inp < 0)
-            // If it is negative
-            printf("Not a valid number\n");
-        else if (inp == 0)
-            // If the input is 0, stop the loop
-            stop = 1;
-        else if (inp > high)
-            // If the input is highest, set the highest to the input
-            high = inp;
+        if (INP == 0) {
+            printf("\nYour largest number was %.2F.", HIGH);
+            STOP = 1;
+        } else if (INP > HIGH || HIGH == 0) {
+            HIGH = INP;
+        } else if (INP < 0) {
+            printf("Invalid Number\n");
+            STOP = 1;
+        }
     }
-    // Display the highest numbers
-    printf("Highest Number: %.2F\n", high);
-
-    return (EXIT_SUCCESS);
+    return 0;
 }
 
