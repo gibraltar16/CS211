@@ -11,7 +11,7 @@
 /*
  * 
  */
-int main() {
+int mains() {
     int INP, STOP;
 
     while (STOP != 1) {
@@ -23,7 +23,6 @@ int main() {
                 STOP = 1;
                 break;
             case 1:
-                project01();
                 break;
             case 2:
                 project02();
