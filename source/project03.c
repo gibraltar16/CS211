@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int project03() {
     float Rate, CurrentYr;
     int Attempt = 0;
 
