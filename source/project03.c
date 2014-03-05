@@ -20,7 +20,7 @@ int project03() {
         // Get the rate
         printf("Enter the rate: ");
         scanf("%f", &Rate);
-        
+
         if (CurrentYr > 0 && CurrentYr < 1000000 && Rate > 0 && Rate < 4) {
             // If the user inputs valid numbers, the loop stops
             Attempt = -1;
@@ -36,7 +36,7 @@ int project03() {
     printf("Year    Population\n----    ----------");
     // Loop
     for (int i = 0; i <= 25; i++) {
-        printf("\n  %i     %i", i, (int)CurrentYr);
+        printf("\n  %i     %i", i, (int) CurrentYr);
         // Replaces CurrentYr with the next year's value
         CurrentYr = Rate * CurrentYr * (1 - ((float) CurrentYr / 1000000));
     }
