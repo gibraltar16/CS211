@@ -38,7 +38,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/source/main.o \
 	${OBJECTDIR}/source/project01.o \
 	${OBJECTDIR}/source/project02.o \
-	${OBJECTDIR}/source/project03.o
+	${OBJECTDIR}/source/project03.o \
+	${OBJECTDIR}/source/project04.o
 
 
 # C Compiler Flags
@@ -84,6 +85,11 @@ ${OBJECTDIR}/source/project03.o: source/project03.c
 	${MKDIR} -p ${OBJECTDIR}/source
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source/project03.o source/project03.c
+
+${OBJECTDIR}/source/project04.o: source/project04.c 
+	${MKDIR} -p ${OBJECTDIR}/source
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/source/project04.o source/project04.c
 
 # Subprojects
 .build-subprojects:

@@ -11,7 +11,7 @@
 /*
  * 
  */
-int Main() {
+int main() {
     char CHARS[36] = "abcdefghijklmnopqrstuvwxyz1234567890";                    // list of characters the program will look for
     char INP[100];                                                              // the 100 character user input
     int OPT = 1;                                                                // Handles the user input for options
@@ -42,9 +42,14 @@ int Main() {
             int INWORD = 0;                                                     // used as Boolean [0|1] to represent if the loop is already in a word
             for (int i = 0; i < strlen(INP); i++) {                             // 'i' FOREACH in INP
                 if (INWORD == 0) {
-                    for (int a = 0; a < strlen(CHARS); a++)
-                        if (tolower(INP[i] == CHARS[a]))
-                            INWORD = 1;                                         // If not in a word, checks if INP is in CHARS, then sets INWORD TRUE
+                    // // You can do either one of these
+                    // // Code Type 1
+                    //for (int a = 0; a < strlen(CHARS); a++)
+                    //    if (tolower(INP[i] == CHARS[a]))
+                    //        INWORD = 1;                                       // If not in a word, checks if INP is in CHARS, then sets INWORD TRUE
+                    // // Code type 2
+                    if (!isspace(INP[i]))
+                        INWORD = 1;                                             // If anything other than SPACE, INWORD is set to TRUE
                 } else if (INWORD == 1) {
                     if (isspace(INP[i])) {
                         COUNT++;                                                // If INWORD is TRUE, adds to COUNT if cur INP is a space
