@@ -43,7 +43,7 @@ OBJECTFILES= \
 
 
 # C Compiler Flags
-CFLAGS=-std=c99
+CFLAGS=
 
 # CC Compiler Flags
 CCFLAGS=
